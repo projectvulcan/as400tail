@@ -1,0 +1,161 @@
+     A*%%TS  SD  20220206  040529  SYAZWANH    REL-V7R4M0  5770-WDS
+     A*=========================================================================
+     A*                                                        SYAZWANH/030905 *
+     A* PVFMONUSD                                                              *
+     A* FILE MONITORING TOOL.                                                  *
+     A*                                                                        *
+     A* VERSION 1 RELEASE 2 MODIFICATION 0                                     *
+     A*                                                                        *
+     A*  FOR USE WITH PVFMONUSR *RPGLE.                                        *
+     A*                                                                        *
+     A*=========================================================================
+     A*%%EC
+     A                                      DSPSIZ(24 80 *DS3)
+     A          R D01
+     A*%%TS  SD  20220206  040529  SYAZWANH    REL-V7R4M0  5770-WDS
+     A                                      CA03(03 'EXIT')
+     A                                      CA12(12 'CANCEL')
+     A                                      CA19(19 'MOVE LEFT')
+     A                                      CA20(20 'MOVE RIGHT')
+     A                                      CA23(23 'DISPLAY PHYSICAL FILE MEMB-
+     A                                      ER')
+     A                                      INVITE
+     A                                  2  2'FILE PATH . . . :'
+     A            WPATH         33A  O  2 20
+     A            WTIMSTM       26A  O  2 54
+     A                                  3  2'RRN'
+     A                                      DSPATR(HI)
+     A            WRRN1          7Y 0O  4  2EDTCDE(4)
+     A  81                                  COLOR(PNK)
+     A            WREC1         70A  O  4 10
+     A  81                                  COLOR(PNK)
+     A            WRRN2          7Y 0O  5  2EDTCDE(4)
+     A  82                                  COLOR(PNK)
+     A            WREC2         70A  O  5 10
+     A  82                                  COLOR(PNK)
+     A            WRRN3          7Y 0O  6  2EDTCDE(4)
+     A  83                                  COLOR(PNK)
+     A            WREC3         70A  O  6 10
+     A  83                                  COLOR(PNK)
+     A            WRRN4          7Y 0O  7  2EDTCDE(4)
+     A  84                                  COLOR(PNK)
+     A            WREC4         70A  O  7 10
+     A  84                                  COLOR(PNK)
+     A            WRRN5          7Y 0O  8  2EDTCDE(4)
+     A  85                                  COLOR(PNK)
+     A            WREC5         70A  O  8 10
+     A  85                                  COLOR(PNK)
+     A            WRRN6          7Y 0O  9  2EDTCDE(4)
+     A  86                                  COLOR(PNK)
+     A            WREC6         70A  O  9 10
+     A  86                                  COLOR(PNK)
+     A            WRRN7          7Y 0O 10  2EDTCDE(4)
+     A  87                                  COLOR(PNK)
+     A            WREC7         70A  O 10 10
+     A  87                                  COLOR(PNK)
+     A            WRRN8          7Y 0O 11  2EDTCDE(4)
+     A  88                                  COLOR(PNK)
+     A            WREC8         70A  O 11 10
+     A  88                                  COLOR(PNK)
+     A            WRRN9          7Y 0O 12  2EDTCDE(4)
+     A  89                                  COLOR(PNK)
+     A            WREC9         70A  O 12 10
+     A  89                                  COLOR(PNK)
+     A            WRRN10         7Y 0O 13  2EDTCDE(4)
+     A  90                                  COLOR(PNK)
+     A            WREC10        70A  O 13 10
+     A  90                                  COLOR(PNK)
+     A            WRRN11         7Y 0O 14  2EDTCDE(4)
+     A  91                                  COLOR(PNK)
+     A            WREC11        70A  O 14 10
+     A  91                                  COLOR(PNK)
+     A            WRRN12         7Y 0O 15  2EDTCDE(4)
+     A  92                                  COLOR(PNK)
+     A            WREC12        70A  O 15 10
+     A  92                                  COLOR(PNK)
+     A            WRRN13         7Y 0O 16  2EDTCDE(4)
+     A  93                                  COLOR(PNK)
+     A            WREC13        70A  O 16 10
+     A  93                                  COLOR(PNK)
+     A            WRRN14         7Y 0O 17  2EDTCDE(4)
+     A  94                                  COLOR(PNK)
+     A            WREC14        70A  O 17 10
+     A  94                                  COLOR(PNK)
+     A            WRRN15         7Y 0O 18  2EDTCDE(4)
+     A  95                                  COLOR(PNK)
+     A            WREC15        70A  O 18 10
+     A  95                                  COLOR(PNK)
+     A            WRRN16         7Y 0O 19  2EDTCDE(4)
+     A  96                                  COLOR(PNK)
+     A            WREC16        70A  O 19 10
+     A  96                                  COLOR(PNK)
+     A            WRRN17         7Y 0O 20  2EDTCDE(4)
+     A  97                                  COLOR(PNK)
+     A            WREC17        70A  O 20 10
+     A  97                                  COLOR(PNK)
+     A            WRRN18         7Y 0O 21  2EDTCDE(4)
+     A  98                                  COLOR(PNK)
+     A            WREC18        70A  O 21 10
+     A  98                                  COLOR(PNK)
+     A                                 23  3'F3=EXIT'
+     A                                      COLOR(BLU)
+     A            WHOUR          2S 0O 22 66
+     A                                 22 69'H'
+     A            WMINS          2S 0O 22 71
+     A                                 22 74'M'
+     A            WSECS          2S 0O 22 76
+     A                                 22 79'S'
+     A                                 22 61'IDLE'
+     A            WRULE         70A  O  3 10DSPATR(HI)
+     A            WNMSG          6Y 0O 22 44EDTCDE(3)
+     A                                 22 51'MESSAGES.'
+     A                                 23 13'F19=LEFT'
+     A                                      COLOR(BLU)
+     A                                 23 24'F20=RIGHT'
+     A                                      COLOR(BLU)
+     A                                 23 36'F23=DISPLAY PHYSICAL FILE MEMBER'
+     A                                      COLOR(BLU)
+     A                                  1  2USER
+     A                                  1 72SYSNAME
+     A*                                22 34'[ %'
+     A*           MCNT4          3S 0O 22 38
+     A*                                22 42']'
+     A            ERRMSG1       50A  O 24  3
+     A  41                                  ERRMSGID(CPI8088 *LIBL/QCPFMSG)
+     A  42                                  ERRMSGID(CPI8086 *LIBL/QCPFMSG)
+     A                                  1 28'TAIL COMMAND FOR AS400 PF'
+     A                                      DSPATR(HI)
+     A          R D02
+     A*%%TS  SD  20220206  040529  SYAZWANH    REL-V7R4M0  5770-WDS
+     A                                      CA03(03 'EXIT')
+     A                                      CA12(12 'CANCEL')
+     A                                  1  2USER
+     A                                  1 72DATE
+     A                                      EDTCDE(Y)
+     A                                  2  2SYSNAME
+     A                                      DSPATR(HI)
+     A                                  2 72TIME
+     A                                  3  2'                                  -
+     A                                                                         -
+     A                                               '
+     A                                      DSPATR(UL)
+     A                                  5  3'PARAMETER SETUP'
+     A                                      DSPATR(HI)
+     A                                  7  5'FILE NAME . . . . .'
+     A            WFIL          10A  B  7 26
+     A  51                                  DSPATR(PC)
+     A                                  8  7'LIBRARY NAME  . . .'
+     A            WLIB          10A  B  8 28
+     A  52                                  DSPATR(PC)
+     A                                 10  5'MEMBER NAME . . . .'
+     A            WMBR          10A  B 10 26
+     A  53                                  DSPATR(PC)
+     A                                 22  2'                                  -
+     A                                                                         -
+     A                                               '
+     A                                      DSPATR(UL)
+     A                                 23  3'F3=EXIT'
+     A                                      COLOR(BLU)
+     A            WMSG          70A  O 21  5DSPATR(HI)
+     A                                  1 28'TAIL COMMAND FOR AS400 PF'
+     A                                      DSPATR(HI)
