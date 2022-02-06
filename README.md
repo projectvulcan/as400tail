@@ -2,7 +2,7 @@
 Monitors a physical file like Unix tail command. Auto refresh the display and show new records.
 
 ## Introduction
-This tool was written out of frustration when required to repeatedly hit Enter key on DSPPFM command while monitoring log files (PF-DTA) for incoming transactions.
+This tool was written out of frustration when required to repeatedly hit Enter key on DSPPFM command while monitoring log files (PF-DTA) for incoming transactions. I wrote this for me but I hope it will benefit you too.
 
 ## How to Compile
 First, upload the source to your AS/400 using FTP or other similar means, then set the correct source type for each member:
@@ -24,5 +24,7 @@ Enter the file, library and member of the PF-DTA you wish to monitor. Press Ente
 
 ![This is an image](screenshot2.png)
 
+When new entries are written to the monitored file, the display will refresh and highlight those new entries. Timer at bottom right of the screen indicates how long it's been since new entries were found. You can navigate left/right (like DSPPFM) if your records are longer.
+
 ## Additional Notes
-You will require ILE C compiler in addition to RPG and DDS.
+You will require ILE C compiler in addition to RPG and DDS. The program will always read last record entry, so if your file is not sequential or if your PF make use of REUSEDLT then this program is not for you.
