@@ -24,7 +24,7 @@ Enter the file, library and member of the PF-DTA you wish to monitor. Press Ente
 
 ![This is an image](screenshot2.png)
 
-When new entries are written to the monitored file, the display will refresh and highlight those new entries. Timer at bottom right of the screen indicates how long it's been since new entries were found. You can navigate left/right (like DSPPFM) if your records are longer.
+When new entries are written to the monitored file, the display will refresh and highlight those new entries. Counter and timer at bottom right of the screen shows how many records were read in the last refresh and how long it's been since new entries were found. You can navigate left/right (like DSPPFM) if your records are longer.
 
 ## Additional Notes
 You will require ILE C compiler in addition to RPG and DDS. The program will always read last record entry, so if your file is not sequential or if your PF make use of REUSEDLT, then this program is not for you. Program was written in Free-Format RPG.
